@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panelLeftMenu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonWorks = new System.Windows.Forms.Button();
+            this.buttonCars = new System.Windows.Forms.Button();
             this.panelLeftMenuHeader = new System.Windows.Forms.Panel();
             this.labelLogj = new System.Windows.Forms.Label();
             this.panelMainHeader = new System.Windows.Forms.Panel();
-            this.panelMainFrame = new System.Windows.Forms.Panel();
-            this.buttonCars = new System.Windows.Forms.Button();
-            this.buttonWorks = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelCarCounter = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelCarCounter = new System.Windows.Forms.Label();
+            this.panelMainFrame = new System.Windows.Forms.Panel();
             this.panelLeftMenu.SuspendLayout();
             this.panelLeftMenuHeader.SuspendLayout();
             this.panelMainHeader.SuspendLayout();
@@ -54,6 +54,42 @@
             this.panelLeftMenu.Name = "panelLeftMenu";
             this.panelLeftMenu.Size = new System.Drawing.Size(220, 462);
             this.panelLeftMenu.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 214);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 50);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Список выполненных работ";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // buttonWorks
+            // 
+            this.buttonWorks.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonWorks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWorks.Location = new System.Drawing.Point(0, 164);
+            this.buttonWorks.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
+            this.buttonWorks.Name = "buttonWorks";
+            this.buttonWorks.Size = new System.Drawing.Size(220, 50);
+            this.buttonWorks.TabIndex = 2;
+            this.buttonWorks.Text = "Список предстоящих работ";
+            this.buttonWorks.UseVisualStyleBackColor = true;
+            // 
+            // buttonCars
+            // 
+            this.buttonCars.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCars.Location = new System.Drawing.Point(0, 114);
+            this.buttonCars.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
+            this.buttonCars.Name = "buttonCars";
+            this.buttonCars.Size = new System.Drawing.Size(220, 50);
+            this.buttonCars.TabIndex = 1;
+            this.buttonCars.Text = "Автомобили на станции";
+            this.buttonCars.UseVisualStyleBackColor = true;
             // 
             // panelLeftMenuHeader
             // 
@@ -84,49 +120,14 @@
             this.panelMainHeader.Size = new System.Drawing.Size(564, 50);
             this.panelMainHeader.TabIndex = 1;
             // 
-            // panelMainFrame
+            // label1
             // 
-            this.panelMainFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainFrame.Location = new System.Drawing.Point(220, 50);
-            this.panelMainFrame.Name = "panelMainFrame";
-            this.panelMainFrame.Size = new System.Drawing.Size(564, 412);
-            this.panelMainFrame.TabIndex = 2;
-            // 
-            // buttonCars
-            // 
-            this.buttonCars.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCars.Location = new System.Drawing.Point(0, 114);
-            this.buttonCars.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
-            this.buttonCars.Name = "buttonCars";
-            this.buttonCars.Size = new System.Drawing.Size(220, 50);
-            this.buttonCars.TabIndex = 1;
-            this.buttonCars.Text = "Автомобили на станции";
-            this.buttonCars.UseVisualStyleBackColor = true;
-            // 
-            // buttonWorks
-            // 
-            this.buttonWorks.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonWorks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWorks.Location = new System.Drawing.Point(0, 164);
-            this.buttonWorks.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
-            this.buttonWorks.Name = "buttonWorks";
-            this.buttonWorks.Size = new System.Drawing.Size(220, 50);
-            this.buttonWorks.TabIndex = 2;
-            this.buttonWorks.Text = "Список предстоящих работ";
-            this.buttonWorks.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 214);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Список выполненных работ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Работ предстоит: у";
             // 
             // labelCarCounter
             // 
@@ -137,14 +138,13 @@
             this.labelCarCounter.TabIndex = 0;
             this.labelCarCounter.Text = "Машин в СТО: х";
             // 
-            // label1
+            // panelMainFrame
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Работ предстоит: у";
+            this.panelMainFrame.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainFrame.Location = new System.Drawing.Point(220, 50);
+            this.panelMainFrame.Name = "panelMainFrame";
+            this.panelMainFrame.Size = new System.Drawing.Size(564, 412);
+            this.panelMainFrame.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -158,6 +158,7 @@
             this.MaximumSize = new System.Drawing.Size(800, 500);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelLeftMenu.ResumeLayout(false);
             this.panelLeftMenuHeader.ResumeLayout(false);
             this.panelLeftMenuHeader.PerformLayout();

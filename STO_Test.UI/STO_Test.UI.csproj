@@ -82,5 +82,11 @@
   <ItemGroup>
     <Folder Include="Presentor\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\STO_Test.Model\STO_Test.Model.csproj">
+      <Project>{d88a0fa5-0260-4004-a957-368d6c39245c}</Project>
+      <Name>STO_Test.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

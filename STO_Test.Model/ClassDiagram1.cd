@@ -1,73 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="STO_Test.Model.Car">
-    <Position X="2.75" Y="0.75" Width="1.5" />
-    <AssociationLine Name="Works" Type="STO_Test.Model.Work">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.829" Y="0.081" />
-      </MemberNameLabel>
-    </AssociationLine>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="STO_Test.Model.Entities.Car">
+    <Position X="1.5" Y="0.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEBAA=</HashCode>
-      <FileName>Models\Car.cs</FileName>
+      <HashCode>AAACAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAgAAAEBAA=</HashCode>
+      <FileName>Entities\Car.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Works" />
-    </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="STO_Test.Model.Work">
-    <Position X="5.75" Y="0.75" Width="1.5" />
-    <AssociationLine Name="Type" Type="STO_Test.Model.Models.WorkType">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.912" Y="0.07" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="STO_Test.Model.Entities.Work">
+    <Position X="5.75" Y="0.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAEABQAAAAAAAAAAQAAAAAAAAA=</HashCode>
-      <FileName>Models\Work.cs</FileName>
+      <HashCode>AQACAAAAAAAAAAAAAAAEABQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Entities\Work.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Type" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="STO_Test.Model.Models.WorkType">
-    <Position X="8.75" Y="0.75" Width="1.5" />
+  <Class Name="STO_Test.Model.Entities.WorkType">
+    <Position X="7.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\WorkType.cs</FileName>
+      <FileName>Entities\WorkType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="STO_Test.Model.Db.STOContext">
-    <Position X="2.75" Y="3.25" Width="1.5" />
-    <AssociationLine Name="Cars" Type="STO_Test.Model.Car">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="System.Data.Entity.DbContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="7.75" />
+        <Point X="5.875" Y="7.75" />
+        <Point X="5.875" Y="6.663" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Cars" Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="6.312" />
+        <Point X="2.438" Y="6.312" />
+        <Point X="2.438" Y="2.685" />
+      </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.029" Y="0.85" />
+        <Position X="-1.711" Y="3.558" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Works" Type="STO_Test.Model.Work">
+    <AssociationLine Name="CarTypes" Type="STO_Test.Model.Entities.CarType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.75" Y="5.688" />
+        <Point X="4.281" Y="5.688" />
+        <Point X="4.281" Y="1.971" />
+      </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="1.579" Y="1.112" />
+        <Position X="-1.387" Y="3.606" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="WorkTypes" Type="STO_Test.Model.Models.WorkType">
+    <AssociationLine Name="Employees" Type="STO_Test.Model.Entities.Employee">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="4.329" Y="1.925" />
+        <Position X="1.452" Y="3.714" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="EmployeeTypes" Type="STO_Test.Model.Entities.EmployeeType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="6.451" />
+        <Point X="12.781" Y="6.451" />
+        <Point X="12.781" Y="1.971" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.817" Y="4.408" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Works" Type="STO_Test.Model.Entities.Work" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.125" Y="5.5" />
+        <Point X="6.125" Y="4.571" />
+        <Point X="6.75" Y="4.571" />
+        <Point X="6.75" Y="2.685" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.645" Y="0.779" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="WorkTypes" Type="STO_Test.Model.Entities.WorkType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.5" />
+        <Point X="6.75" Y="5.125" />
+        <Point X="8.531" Y="5.125" />
+        <Point X="8.531" Y="1.971" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.285" Y="3.067" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>Db\DbContext.cs</FileName>
+      <HashCode>CAAAAAgCAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Db\STOContext.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Property Name="Cars" />
+      <Property Name="CarTypes" />
+      <Property Name="Employees" />
+      <Property Name="EmployeeTypes" />
       <Property Name="Works" />
       <Property Name="WorkTypes" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="System.Data.Entity.DbContext" Collapsed="true">
-    <Position X="0.75" Y="3.75" Width="1.5" />
+    <Position X="2" Y="7.5" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="STO_Test.Model.Entities.Employee">
+    <Position X="10" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Entities\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STO_Test.Model.Entities.CarType">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\CarType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STO_Test.Model.Entities.EmployeeType">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\EmployeeType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STO_Test.Model.DbReader">
+    <Position X="8" Y="8" Width="2.75" />
+    <AssociationLine Name="db" Type="STO_Test.Model.Db.STOContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="9.235" />
+        <Point X="6.812" Y="9.235" />
+        <Point X="6.812" Y="6.663" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.797" Y="2.478" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABAAIAAAAAQgAAAAAAAAAACABAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbReader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="8.25" />
 </ClassDiagram>

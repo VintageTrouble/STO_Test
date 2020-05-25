@@ -51,16 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Db\DbContext.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\WorkType.cs" />
+    <Compile Include="DbReader.cs" />
+    <Compile Include="Db\STOContext.cs" />
+    <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\CarType.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\EmployeeType.cs" />
+    <Compile Include="Entities\WorkType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\Work.cs" />
+    <Compile Include="Entities\Work.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

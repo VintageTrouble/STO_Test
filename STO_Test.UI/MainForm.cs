@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using STO_Test.Model.Db;
 
 namespace STO_Test.UI
 {
@@ -15,6 +16,11 @@ namespace STO_Test.UI
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
