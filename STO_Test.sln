@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STO_Test.UI", "STO_Test.UI\STO_Test.UI.csproj", "{2644C93F-79C9-4A6C-B06D-9C55C374EDEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STO_Test.Model", "STO_Test.Model\STO_Test.Model.csproj", "{D88A0FA5-0260-4004-A957-368D6C39245C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2644C93F-79C9-4A6C-B06D-9C55C374EDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2644C93F-79C9-4A6C-B06D-9C55C374EDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2644C93F-79C9-4A6C-B06D-9C55C374EDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88A0FA5-0260-4004-A957-368D6C39245C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88A0FA5-0260-4004-A957-368D6C39245C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88A0FA5-0260-4004-A957-368D6C39245C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88A0FA5-0260-4004-A957-368D6C39245C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

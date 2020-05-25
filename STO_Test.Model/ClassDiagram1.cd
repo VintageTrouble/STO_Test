@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="STO_Test.Model.Car">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Works" Type="STO_Test.Model.Work">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.829" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEBAA=</HashCode>
+      <FileName>Models\Car.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Works" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="STO_Test.Model.Work">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Type" Type="STO_Test.Model.Models.WorkType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.912" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAEABQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Work.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STO_Test.Model.Models.WorkType">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WorkType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STO_Test.Model.Db.STOContext">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Cars" Type="STO_Test.Model.Car">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.029" Y="0.85" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Works" Type="STO_Test.Model.Work">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.579" Y="1.112" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="WorkTypes" Type="STO_Test.Model.Models.WorkType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="4.329" Y="1.925" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Db\DbContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cars" />
+      <Property Name="Works" />
+      <Property Name="WorkTypes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="System.Data.Entity.DbContext" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="8.25" />
+</ClassDiagram>
