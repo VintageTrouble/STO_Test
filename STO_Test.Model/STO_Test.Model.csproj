@@ -51,8 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cars\BaseCar.cs" />
+    <Compile Include="Cars\LuxuryCar.cs" />
+    <Compile Include="Cars\MinivanCar.cs" />
+    <Compile Include="Cars\SportCar.cs" />
+    <Compile Include="Cars\SUV.cs" />
+    <Compile Include="Works\EngineCheck.cs" />
+    <Compile Include="Works\EngineRepair.cs" />
+    <Compile Include="Works\Painting.cs" />
+    <Compile Include="Works\TransmissionCheck.cs" />
+    <Compile Include="Works\TransmissionRepair.cs" />
+    <Compile Include="Works\BaseWork.cs" />
     <Compile Include="DbReader.cs" />
     <Compile Include="Db\STOContext.cs" />
+    <Compile Include="Employees\BaseEmployee.cs" />
+    <Compile Include="Employees\CarBodyMaster.cs" />
+    <Compile Include="Employees\EngineMaster.cs" />
+    <Compile Include="Employees\PaintMaster.cs" />
     <Compile Include="Entities\Car.cs" />
     <Compile Include="Entities\CarType.cs" />
     <Compile Include="Entities\Employee.cs" />
@@ -69,6 +84,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
