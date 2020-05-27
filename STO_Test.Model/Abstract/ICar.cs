@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using STO_Test.Model.Entities;
 
-namespace STO_Test.Model.Cars
+namespace STO_Test.Model.Abstract
 {
-    public abstract class BaseCar : Car
+    public interface ICar
     {
-        //Future functionality
+        void AddWork(Work work);
     }
 }

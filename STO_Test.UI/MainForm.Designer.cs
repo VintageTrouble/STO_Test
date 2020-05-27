@@ -38,9 +38,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelCarCounter = new System.Windows.Forms.Label();
             this.panelMainFrame = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelLeftMenu.SuspendLayout();
             this.panelLeftMenuHeader.SuspendLayout();
             this.panelMainHeader.SuspendLayout();
+            this.panelMainFrame.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeftMenu
@@ -104,7 +106,7 @@
             // 
             this.labelLogj.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelLogj.AutoSize = true;
-            this.labelLogj.Location = new System.Drawing.Point(84, 58);
+            this.labelLogj.Location = new System.Drawing.Point(89, 61);
             this.labelLogj.Name = "labelLogj";
             this.labelLogj.Size = new System.Drawing.Size(34, 15);
             this.labelLogj.TabIndex = 0;
@@ -140,11 +142,22 @@
             // 
             // panelMainFrame
             // 
+            this.panelMainFrame.Controls.Add(this.button2);
             this.panelMainFrame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainFrame.Location = new System.Drawing.Point(220, 50);
             this.panelMainFrame.Name = "panelMainFrame";
             this.panelMainFrame.Size = new System.Drawing.Size(564, 412);
             this.panelMainFrame.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(192, 128);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "jafosadf";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -164,6 +177,7 @@
             this.panelLeftMenuHeader.PerformLayout();
             this.panelMainHeader.ResumeLayout(false);
             this.panelMainHeader.PerformLayout();
+            this.panelMainFrame.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -180,5 +194,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelCarCounter;
         private System.Windows.Forms.Panel panelMainFrame;
+        private System.Windows.Forms.Button button2;
     }
 }

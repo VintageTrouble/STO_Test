@@ -4,7 +4,7 @@ using STO_Test.Model.Entities;
 
 namespace STO_Test.Model
 {
-    public class DbReader
+    public class DbHandler
     {
         //---Variables---
         STOContext db;
@@ -97,6 +97,30 @@ namespace STO_Test.Model
             }
 
             return employeeTypes;
+        }
+
+        public void AddWork(Work work)
+        {
+            using(db = new STOContext())
+            {
+                db.Works.Add(work);
+            }
+        }
+
+        public void AddCar(Car car)
+        {
+            using (db = new STOContext())
+            {
+                db.Cars.Add(car);
+            }
+        }
+
+        public void AddEmployee(Employee employee)
+        {
+            using (db = new STOContext())
+            {
+                db.Employees.Add(employee);
+            }
         }
     }
 }

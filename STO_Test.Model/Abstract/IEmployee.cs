@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace STO_Test.Model.Employees
+namespace STO_Test.Model.Abstract
 {
-    public class CarBodyMaster : BaseEmployee
+    public interface IEmployee
     {
-        //Future functionality
+        void AddWork();
     }
 }
