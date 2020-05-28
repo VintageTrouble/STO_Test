@@ -2,7 +2,7 @@
 
 namespace STO_Test.Model.Concrete.Employees
 {
-    public class CarBodyMaster : IEmployee
+    public class CarBodyMaster : Entities.Employee, IEmployee
     {
         public void AddWork()
         {

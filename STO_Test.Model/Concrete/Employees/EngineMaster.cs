@@ -2,7 +2,7 @@
 
 namespace STO_Test.Model.Concrete.Employees
 {
-    public class EngineMaster : IEmployee
+    public class EngineMaster : Entities.Employee, IEmployee
     {
         public void AddWork()
         {

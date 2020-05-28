@@ -7,9 +7,14 @@ namespace STO_Test.Model.Entities
     public class Car
     {
         public int Id { get; set; }
-        [ForeignKey("CarType")] public int CarTypeId { get; set; }
-        public string Owner { get; set; }
+
+        [ForeignKey("CarType")]
+        public int CarTypeId { get; set; }
+
+        [Index(IsUnique = true)]
         public string StateNumber { get; set; } //Гос номер регистрации
+
+        public string Owner { get; set; }
 
         //Навигационные свойства
         public virtual CarType CarType { get; set; } //Тип кузова

@@ -1,118 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="STO_Test.Model.Entities.Car">
-    <Position X="7" Y="1.25" Width="2" />
-    <AssociationLine Name="Works" Type="STO_Test.Model.Entities.Work" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="8.25" Y="1.25" />
-        <Point X="8.25" Y="0.659" />
-        <Point X="11.719" Y="0.659" />
-        <Point X="11.719" Y="1.25" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.71" Y="0.522" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="7" Y="1" Width="2" />
     <TypeIdentifier>
       <HashCode>AACCAACAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAEAAA=</HashCode>
       <FileName>Entities\Car.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Works" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="STO_Test.Model.Entities.Work">
-    <Position X="11.25" Y="1.25" Width="2" />
-    <AssociationLine Name="Type" Type="STO_Test.Model.Entities.WorkType" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="12.75" Y="1.25" />
-        <Point X="12.75" Y="0.875" />
-        <Point X="14" Y="0.875" />
-        <Point X="14" Y="1.25" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.395" Y="0.361" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="7" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AQACAAAAAAAAAAAAAAAEAAQACAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Entities\Work.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Type" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="STO_Test.Model.Entities.WorkType">
-    <Position X="13.25" Y="1.25" Width="1.5" />
+    <Position X="9" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgCAAAAAAAAAAAAAAAAABQAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\WorkType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="STO_Test.Model.Db.STOContext">
-    <Position X="11.25" Y="6" Width="1.5" />
+    <Position X="13" Y="4" Width="1.5" />
     <InheritanceLine Type="System.Data.Entity.DbContext" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="8" />
-        <Point X="11.562" Y="8" />
-        <Point X="11.562" Y="7.163" />
+        <Point X="14.5" Y="3.312" />
+        <Point X="14.25" Y="3.312" />
+        <Point X="14.25" Y="4" />
       </Path>
     </InheritanceLine>
-    <AssociationLine Name="Works" Type="STO_Test.Model.Entities.Work" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="11.625" Y="6" />
-        <Point X="11.625" Y="3.853" />
-        <Point X="12.25" Y="3.853" />
-        <Point X="12.25" Y="3.006" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.645" Y="0.779" />
-      </MemberNameLabel>
-    </AssociationLine>
-    <AssociationLine Name="WorkTypes" Type="STO_Test.Model.Entities.WorkType" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="12.25" Y="6" />
-        <Point X="12.25" Y="5.625" />
-        <Point X="14.031" Y="5.625" />
-        <Point X="14.031" Y="2.649" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.285" Y="2.861" />
-      </MemberNameLabel>
-    </AssociationLine>
     <AssociationLine Name="Cars" Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11.25" Y="6.812" />
-        <Point X="7.938" Y="6.812" />
-        <Point X="7.938" Y="3.007" />
+        <Point X="14.01" Y="4" />
+        <Point X="14.01" Y="0.625" />
+        <Point X="8.188" Y="0.625" />
+        <Point X="8.188" Y="1" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-2.048" Y="3.723" />
+        <Position X="-2.67" Y="0.303" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="CarTypes" Type="STO_Test.Model.Entities.CarType" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="CarTypes" Type="STO_Test.Model.Entities.CarType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.629" Y="-0.059" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Employees" Type="STO_Test.Model.Entities.Employee" ManuallyRouted="true">
       <Path>
-        <Point X="11.25" Y="6.188" />
-        <Point X="9.781" Y="6.188" />
-        <Point X="9.781" Y="2.471" />
+        <Point X="13.75" Y="5.163" />
+        <Point X="13.75" Y="6.035" />
+        <Point X="8.375" Y="6.035" />
+        <Point X="8.375" Y="6.25" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.387" Y="3.606" />
+        <Position X="-2.477" Y="0.139" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Employees" Type="STO_Test.Model.Entities.Employee">
+    <AssociationLine Name="EmployeeTypes" Type="STO_Test.Model.Entities.EmployeeType">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="1.452" Y="3.714" />
+        <Position X="0.51" Y="-0.073" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="EmployeeTypes" Type="STO_Test.Model.Entities.EmployeeType" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Works" Type="STO_Test.Model.Entities.Work" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="12.75" Y="6.951" />
-        <Point X="18.281" Y="6.951" />
-        <Point X="18.281" Y="2.649" />
+        <Point X="13.344" Y="5.163" />
+        <Point X="13.344" Y="5.375" />
+        <Point X="8.375" Y="5.375" />
+        <Point X="8.375" Y="5.185" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="2.849" Y="4.202" />
+        <Position X="-2.534" Y="0.109" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="WorkTypes" Type="STO_Test.Model.Entities.WorkType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.344" Y="-0.077" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -120,64 +83,59 @@
       <FileName>Db\STOContext.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="Works" />
-      <Property Name="WorkTypes" />
       <Property Name="Cars" />
       <Property Name="CarTypes" />
       <Property Name="Employees" />
       <Property Name="EmployeeTypes" />
+      <Property Name="Works" />
+      <Property Name="WorkTypes" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="System.Data.Entity.DbContext" Collapsed="true">
-    <Position X="9.5" Y="7.75" Width="1.5" />
+    <Position X="14.5" Y="3" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="STO_Test.Model.Entities.Employee">
-    <Position X="15.5" Y="1.25" Width="2" />
-    <AssociationLine Name="Works" Type="STO_Test.Model.Entities.Work" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="16.375" Y="1.25" />
-        <Point X="16.375" Y="0.566" />
-        <Point X="12.438" Y="0.566" />
-        <Point X="12.438" Y="1.25" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-1.239" Y="0.633" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="7" Y="6.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAEAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAARAAAAAAAAAAQAAAAAEAAA=</HashCode>
       <FileName>Entities\Employee.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Works" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="STO_Test.Model.Entities.CarType">
-    <Position X="9" Y="1.25" Width="1.5" />
+    <Position X="9" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\CarType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="STO_Test.Model.Entities.EmployeeType">
-    <Position X="17.5" Y="1.25" Width="1.5" />
+    <Position X="9" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACACAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAA=</HashCode>
       <FileName>Entities\EmployeeType.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="STO_Test.Model.DbHandler">
-    <Position X="10.75" Y="9.5" Width="2.75" />
+  <Class Name="STO_Test.Model.Db.DbHandler">
+    <Position X="15.75" Y="4" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>JABAAMIAAAAAgEACBAAAAAACAhAAEEAAAAAAAAAAAAA=</HashCode>
-      <FileName>DbHandler.cs</FileName>
-      <NewMemberFileName>DbHAndler.cs</NewMemberFileName>
+      <HashCode>JABAAMIAAAABgEACBAAAAAACAxAAEEAAAEAAAAAABAA=</HashCode>
+      <FileName>Db\DbHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="STO_Test.Model.Concrete.Employees.CarBodyMaster">
-    <Position X="2.25" Y="6.5" Width="1.5" />
+    <Position X="3.5" Y="8" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Employee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="6.25" />
+        <Point X="7.25" Y="6.053" />
+        <Point X="6.75" Y="6.053" />
+        <Point X="6.75" Y="7.625" />
+        <Point X="4.625" Y="7.625" />
+        <Point X="4.625" Y="8" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Concrete\Employees\CarBodyMaster.cs</FileName>
@@ -185,7 +143,17 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="STO_Test.Model.Concrete.Employees.EngineMaster">
-    <Position X="2.25" Y="5" Width="1.5" />
+    <Position X="2" Y="8" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Employee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="6.25" />
+        <Point X="7.5" Y="6.066" />
+        <Point X="6.75" Y="6.066" />
+        <Point X="6.75" Y="7.625" />
+        <Point X="3.188" Y="7.625" />
+        <Point X="3.188" Y="8" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Concrete\Employees\EngineMaster.cs</FileName>
@@ -193,7 +161,17 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="STO_Test.Model.Concrete.Employees.PaintMaster">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="8" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Employee" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.688" Y="6.25" />
+        <Point X="7.688" Y="6.072" />
+        <Point X="6.75" Y="6.072" />
+        <Point X="6.75" Y="7.625" />
+        <Point X="1.625" Y="7.625" />
+        <Point X="1.625" Y="8" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Concrete\Employees\PaintMaster.cs</FileName>
@@ -204,9 +182,9 @@
     <Position X="3.5" Y="1.5" Width="1.5" />
     <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.75" Y="1.25" />
-        <Point X="7.75" Y="0.875" />
-        <Point X="4.25" Y="0.875" />
+        <Point X="7.375" Y="1" />
+        <Point X="7.375" Y="0.625" />
+        <Point X="4.25" Y="0.625" />
         <Point X="4.25" Y="1.5" />
       </Path>
     </InheritanceLine>
@@ -220,9 +198,9 @@
     <Position X="5" Y="1.5" Width="1.5" />
     <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8" Y="1.25" />
-        <Point X="8" Y="0.875" />
-        <Point X="5.812" Y="0.875" />
+        <Point X="7.562" Y="1" />
+        <Point X="7.562" Y="0.625" />
+        <Point X="5.812" Y="0.625" />
         <Point X="5.812" Y="1.5" />
       </Path>
     </InheritanceLine>
@@ -234,13 +212,11 @@
   </Class>
   <Class Name="STO_Test.Model.Concrete.Cars.LuxuryCar">
     <Position X="0.5" Y="1.5" Width="1.5" />
-    <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedToPoint="true">
+    <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.656" Y="1.25" />
-        <Point X="8.656" Y="0.875" />
-        <Point X="8.333" Y="0.875" Type="JumpStart" />
-        <Point X="8.167" Y="0.875" Type="JumpEnd" />
-        <Point X="1.312" Y="0.875" />
+        <Point X="7.75" Y="1" />
+        <Point X="7.75" Y="0.625" />
+        <Point X="1.312" Y="0.625" />
         <Point X="1.312" Y="1.5" />
       </Path>
     </InheritanceLine>
@@ -252,11 +228,11 @@
   </Class>
   <Class Name="STO_Test.Model.Concrete.Cars.MinivanCar">
     <Position X="2" Y="1.5" Width="1.5" />
-    <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedToPoint="true">
+    <InheritanceLine Type="STO_Test.Model.Entities.Car" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.344" Y="1.25" />
-        <Point X="7.344" Y="0.875" />
-        <Point X="2.875" Y="0.875" />
+        <Point X="7.188" Y="1" />
+        <Point X="7.188" Y="0.625" />
+        <Point X="2.875" Y="0.625" />
         <Point X="2.875" Y="1.5" />
       </Path>
     </InheritanceLine>
@@ -266,45 +242,106 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="STO_Test.Model.Concrete.Works.Painting">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+  <Class Name="STO_Test.Model.Concrete.Works.Painting" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.188" Y="5.185" />
+        <Point X="7.188" Y="5.375" />
+        <Point X="1.312" Y="5.375" />
+        <Point X="1.312" Y="5.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Concrete\Works\Painting.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="STO_Test.Model.Concrete.Works.EngineCheck">
-    <Position X="0.5" Y="9.5" Width="1.5" />
+  <Class Name="STO_Test.Model.Concrete.Works.EngineCheck" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="5.185" />
+        <Point X="7.75" Y="5.375" />
+        <Point X="1.312" Y="5.375" />
+        <Point X="1.312" Y="4.906" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Concrete\Works\EngineCheck.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="STO_Test.Model.Concrete.Works.EngineRepair">
-    <Position X="0.5" Y="11.5" Width="1.5" />
+  <Class Name="STO_Test.Model.Concrete.Works.EngineRepair" Collapsed="true">
+    <Position X="2" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.375" Y="5.185" />
+        <Point X="7.375" Y="5.375" />
+        <Point X="2.812" Y="5.375" />
+        <Point X="2.812" Y="4.906" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Concrete\Works\EngineRepair.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="STO_Test.Model.Concrete.Works.TransmissionCheck">
-    <Position X="0.5" Y="5.5" Width="1.5" />
+  <Class Name="STO_Test.Model.Concrete.Works.TransmissionCheck" Collapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.562" Y="5.185" />
+        <Point X="7.562" Y="5.375" />
+        <Point X="2.75" Y="5.375" />
+        <Point X="2.75" Y="5.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Concrete\Works\TransmissionCheck.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="STO_Test.Model.Concrete.Works.TransmissionRepair">
-    <Position X="0.5" Y="7.5" Width="1.5" />
+  <Class Name="STO_Test.Model.Concrete.Works.TransmissionRepair" Collapsed="true">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="STO_Test.Model.Entities.Work" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.938" Y="5.185" />
+        <Point X="7.938" Y="5.375" />
+        <Point X="4.438" Y="5.375" />
+        <Point X="4.438" Y="5.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Concrete\Works\TransmissionRepair.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="STO_Test.Model.Abstract.ICar" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="STO_Test.Model.Abstract.IWork" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Abstract\IWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="STO_Test.Model.Abstract.IEmployee" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="8.25" />
 </ClassDiagram>

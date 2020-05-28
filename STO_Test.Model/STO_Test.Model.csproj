@@ -63,7 +63,7 @@
     <Compile Include="Concrete\Works\Painting.cs" />
     <Compile Include="Concrete\Works\TransmissionCheck.cs" />
     <Compile Include="Concrete\Works\TransmissionRepair.cs" />
-    <Compile Include="DbHandler.cs" />
+    <Compile Include="Db\DbHandler.cs" />
     <Compile Include="Db\STOContext.cs" />
     <Compile Include="Concrete\Employees\CarBodyMaster.cs" />
     <Compile Include="Concrete\Employees\EngineMaster.cs" />

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace STO_Test.Model.Entities
 {
@@ -11,5 +7,7 @@ namespace STO_Test.Model.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal Salary { get; set; }
+
+        public List<WorkType> AviableWorkType { get; set; }
     }
 }

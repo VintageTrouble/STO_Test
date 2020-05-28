@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using STO_Test.Model.Abstract;
-using STO_Test.Model.Db;
 using STO_Test.Model.Entities;
 using System.Linq;
 using STO_Test.Model.Concrete.Cars;
 using System;
 
-namespace STO_Test.Model
+namespace STO_Test.Model.Db
 {
     public class DbHandler
     {
@@ -171,27 +170,11 @@ namespace STO_Test.Model
             db.SaveChanges();
         }
 
-        public void AddCarType(CarType carType)
-        {
-            var db = new STOContext();
-
-            db.CarTypes.Add(carType);
-            db.SaveChanges();
-        }
-
         public void AddWork(Work work)
         {
             var db = new STOContext();
 
             db.Works.Add(work);
-            db.SaveChanges();
-        }
-
-        public void AddWorkType(WorkType workType)
-        {
-            var db = new STOContext();
-
-            db.WorkTypes.Add(workType);
             db.SaveChanges();
         }
 
@@ -203,16 +186,123 @@ namespace STO_Test.Model
             db.SaveChanges();
         }
 
-        public void AddEmployeeType(EmployeeType employeeType)
+        #endregion
+
+        #region ---Update Methods---
+
+        /// <summary>
+        /// Метод обновляет запись в базе автомобилей
+        /// </summary>
+        /// <param name="old">Запись об автомобиле к изменению</param>
+        /// <param name="newCar">Измененная зпись об автомобиле</param>
+        public void UpdateCar(Car old, Car newCar)
         {
             var db = new STOContext();
+            var carTemp = db.Cars.Where(c => c.Id == old.Id).FirstOrDefault();
 
-            db.EmployeeTypes.Add(employeeType);
+            carTemp = newCar;
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Обновляет запись в базе автомобилей по Id
+        /// </summary>
+        /// <param name="old">Id элемента к изменению</param>
+        /// <param name="newCar">Измененная зпись об автомобиле</param>
+        public void UpdateCar(int old, Car newCar)
+        {
+            var db = new STOContext();
+            var carTemp = db.Cars.Where(c => c.Id == old).FirstOrDefault();
+
+            carTemp = newCar;
+
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Метод обновляет запись в базе обслуживаемых кузовов автомобилей
+        /// </summary>
+        /// <param name="old">Запись о кузове автомобиля к изменению</param>
+        /// <param name="newCarType">Измененная зпись об кузове автомобиля</param>
+        public void UpdateCarType(CarType old, CarType newCarType)
+        {
+            var db = new STOContext();
+            var carTemp = db.CarTypes.Where(c => c.Id == old.Id).FirstOrDefault();
+
+            carTemp = newCarType;
+
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Метод обновляет запись в базе обслуживаемых кузовов автомобилей по Id
+        /// </summary>
+        /// <param name="old">Id элемента к изменению</param>
+        /// <param name="newCarType">Измененная зпись об кузове автомобиля</param>
+        public void UpdateCarType(int old, CarType newCarType)
+        {
+            var db = new STOContext();
+            var carTemp = db.CarTypes.Where(c => c.Id == old).FirstOrDefault();
+
+            carTemp = newCarType;
+
             db.SaveChanges();
         }
 
         #endregion
 
-        //TODO: all requests
+        #region ---Remove Methods---
+
+        /// <summary>
+        /// Метод удаляет запись из базы
+        /// </summary>
+        /// <param name="car">запись к удалению</param>
+        public void RemoveCar(Car car)
+        {
+            var db = new STOContext();
+
+            db.Cars.Remove(car);
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Метод удаляет запись из базы по Id
+        /// </summary>
+        /// <param name="carId">Id записи к удалению</param>
+        public void RemoveCar(int carId)
+        {
+            var db = new STOContext();
+
+            db.Cars.Remove(db.Cars.Where(c => c.Id == carId).FirstOrDefault());
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Метод удаляет запись из базы
+        /// </summary>
+        /// <param name="carType">запись к удалению</param>
+        public void RemoveCarType(CarType carType)
+        {
+            var db = new STOContext();
+
+            db.CarTypes.Remove(carType);
+            db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Метод удаляет запись из базы по Id
+        /// </summary>
+        /// <param name="carId">Id записи к удалению</param>
+        public void RemoveCarType(int carId)
+        {
+            var db = new STOContext();
+
+            db.CarTypes.Remove(db.CarTypes.Where(c => c.Id == carId).FirstOrDefault());
+            db.SaveChanges();
+        }
+
+        #endregion
+
+        //TODO: another requests
     }
 }
