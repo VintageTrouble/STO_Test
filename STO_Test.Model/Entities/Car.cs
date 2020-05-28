@@ -1,14 +1,18 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using STO_Test.Model.Abstract;
 
 namespace STO_Test.Model.Entities
 {
     public class Car
     {
         public int Id { get; set; }
-        public CarType CarType { get; set; } //Грузовик, легковая и тд...
+        [ForeignKey("CarType")] public int CarTypeId { get; set; }
         public string Owner { get; set; }
         public string StateNumber { get; set; } //Гос номер регистрации
 
-        public List<Work> Works { get; set; } //Список работ над автомобилем
+        //Навигационные свойства
+        public virtual CarType CarType { get; set; } //Тип кузова
+        public virtual List<Work> Works { get; set; } //Список работ над автомобилем
     }
 }

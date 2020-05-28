@@ -13,7 +13,9 @@ namespace STO_Test.Model.Db
     {
         public STOContext() 
             : base("DbConnection")
-        {}
+        {
+            Database.CreateIfNotExists();
+        }
 
         public DbSet<Work> Works { get; set; }
         public DbSet<WorkType> WorkTypes { get; set; }

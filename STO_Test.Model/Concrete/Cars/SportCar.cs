@@ -1,9 +1,9 @@
 ﻿using STO_Test.Model.Abstract;
 using STO_Test.Model.Entities;
 
-namespace STO_Test.Model.Cars
+namespace STO_Test.Model.Concrete.Cars
 {
-    public class SportCar : ICar
+    public class SportCar : Car, ICar
     {
         public void AddWork(Work work)
         {

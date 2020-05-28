@@ -9,7 +9,7 @@ namespace STO_Test.Model.Entities
         public double DurationHours { get; set; }
         public bool IsComplete { get; set; }
 
-        public WorkType Type { get; set; }
-        public List<Employee> Employees { get; set; }
+        public virtual WorkType Type { get; set; }
+        public virtual List<Employee> Employees { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using STO_Test.Model.Db;
+using STO_Test.Model;
 
 namespace STO_Test.UI
 {
@@ -21,6 +21,13 @@ namespace STO_Test.UI
         private void MainForm_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void buttonCars_Click(object sender, EventArgs e)
+        {
+            var dbHandler = new DbHandler();
+
+            dbHandler.GetCarsByType("SportCar");
         }
     }
 }
